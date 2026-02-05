@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Triggering Jenkins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .flow-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            gap: 40px;
+        }
+        .box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .box img {
+            width: 80px;
+            height: 80px;
+        }
+        .arrow {
+            font-size: 40px;
+            color: #555;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GitHub → Jenkins Trigger Flow</h1>
+    <p>This diagram shows how a GitHub push event triggers a Jenkins build via a webhook.</p>
+
+    <div class="flow-container">
+        <div class="box">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+            <h3>GitHub Repo</h3>
+            <p>Push code changes</p>
+        </div>
+
+        <div class="arrow">➡️</div>
+
+        <div class="box">
+            <img src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" alt="Jenkins Logo">
+            <h3>Jenkins Server</h3>
+            <p>Webhook triggers build</p>
+        </div>
+    </div>
+
+    <footer>
+        Example: GitHub Webhook → Jenkins Job Trigger
+    </footer>
+
+</body>
+</html>
